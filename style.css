@@ -1,0 +1,74 @@
+body{
+  background-color: white;
+ margin: 10px;
+}
+.text{
+	align-items: center;
+  color: white;
+}
+
+img{
+	align-items: left;
+}
+
+h1{
+	font-size: 70px;
+    color: from red to blue;
+}
+.rotate {
+  animation: rotation 8s infinite linear;
+ 
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+input{
+height: 50px;
+width:300px;
+border-width: 5px;
+padding: 30px;
+border-color: blue;
+border-radius: 6px;
+font-size: 25px;
+
+}
+button{
+color: orange;
+height: 70px;
+border-radius: 6px;
+padding: 10px;
+border-color: orange;
+font-size: 20px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: lightgreen;
+
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+   /* justify-content:right;*/
+    justify-content: cover;
+}
+

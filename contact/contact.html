@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" type="text/css" href="../navigationbar/navigation.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<style type="">
+input{
+    height:30px;
+    width:200px;
+    border-radius: 10px;
+    
+}
+textarea{
+height:100px;
+width:200px;
+}
+
+#submit_form{
+    border-radius: 20px; 
+    background-color: orange;
+    height: 40px;
+    width: 100px;
+   
+}
+
+.forms{
+
+   height: 530px;
+   width: 350px;
+   border-radius: 20px;
+   background-color: purple;
+
+   
+   
+}
+h3{ padding: 10px;
+    color: white;
+}
+    
+</style>
+
+</head>
+<body style="width: 100%;height:100%;background-image: url(../images/back.jfif);">
+<!--    Navigation bar-->
+<div id="mySidenav" class="sidenav">
+   
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <a href="../index.html">Home</a>
+  <a href="../charts/geochart.html">World Map</a>
+  <a href="../nav/nav.html">States In India</a>
+  <a href="../symtoms/symtoms.html">Symtoms & Precautions</a>
+  <a href="../newsfield/news.html">Top news</a>
+  <a href="../contact/contact.html">Contact Us</a>
+
+
+  <a href="">Developer<img id="myself" src="..\images\myself.jpeg" height="300" width="300" style="border-radius: 30px; padding: 3px;">  Social media
+  <a class="button" href="https://www.instagram.com/raj_taori.cpp/"><i class="fa fa-instagram" style="font-size:48px;color:red; padding-left: 70px;px;"></i></a>
+
+   <a class="button" href="https://www.facebook.com/raj.taori.3"><i class="fa fa-facebook-square" style="font-size:48px;color:blue; padding-left: 70px;"></i></a>
+   
+   <a class="button" href="https://www.linkedin.com/in/raj-tawari-864a8718b/"><i class="fa fa-linkedin-square" style="align-content: center;font-size:48px;color:lightblue; padding-left: 70px;"></i></a></a>
+</div>
+
+<span style="font-size:30px;cursor:pointer;float: left;color: white; width: 100%" onclick="openNav()">&#9776;</span>
+
+<br>
+<br>   
+<!-- Navigation bar ended  -->
+
+
+
+    <center>
+<div  style="height: 40px;background-color: lightgreen; ">
+            <h2 style="padding: 10px;">Contact Us</h2>    
+</div>
+<div class="forms">
+<form  action="https://postmail.invotes.com/send"
+    method="post" id="email_form">
+    <h3>Short Description:<br><input type="text" name="subject" placeholder="Problem" /></h3>
+    
+    
+    <h3>Description:<br><textarea name="text" placeholder="Description"></textarea></h3>
+    
+    
+    <input  type="hidden" name="access_token" value="k558kcee6bk88n382ht9t2fr" />
+      <!-- return urls can be fully qualified -OR-
+         start with / for root relative -OR-
+         start with . for url relative --> 
+    <!-- <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+    <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" /> -->
+   
+    
+    <!-- set the reply-to address -->
+    <h3>Email:<br><input  type="text" name="reply_to"
+                placeholder="Your Email" /></h3>
+    
+                
+
+    <!-- to append extra fields, use the extra_ prefix.
+        Entries will be appended to your message body. -->
+        <h3>Phone No:<br><input type="text" name="extra_phone_number"
+                   placeholder="Phone Number" /></h3>
+    
+                
+
+    <!-- to split your message into 160 chars
+         for an sms gateway -->
+    <!-- <input type="hidden"
+                name="sms_format" value="true" /> -->
+   
+    <input id="submit_form" type="submit" value="Send" />
+    <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
+    
+</form>
+</div>
+     </center>
+<!-- optional, prevents the submit button from being pressed more than once -->
+<script>
+    var submitButton = document.getElementById("submit_form");
+    var form = document.getElementById("email_form");
+    form.addEventListener("submit", function (e) {
+        setTimeout(function() {
+            submitButton.value = "Sending...";
+            submitButton.disabled = true;
+        }, 1);
+    });
+</script> 
+<script type="text/javascript" src="../navigationbar/navigation.js"></script>
+
+</body>
+</html>
